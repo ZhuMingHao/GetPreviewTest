@@ -8,7 +8,12 @@
     mc:Ignorable="d">
 
     <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <CaptureElement Name="PreviewControl" Stretch="Uniform" Height="400" Width="400"/>
+        <Grid>
+            <CaptureElement Name="PreviewControl" Stretch="Uniform" Height="400" Width="400" >
+            </CaptureElement>
+            <Image Source="head.png" Height="400" Width="400" />
+        </Grid>
+        
         <Image x:Name="PreviewFrameImage"/>
         <Button Content="CapturePhoto" Click="Button_Click"/>
     </StackPanel>
